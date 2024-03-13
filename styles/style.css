@@ -2,7 +2,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family);
-  font-variation-settings: 'wght' var(--normal-font-weight);
+  font-variation-settings: "wght" var(--normal-font-weight);
   background-color: var(--main-color);
   background-image: var(--backgriund-gradient);
   background-attachment: fixed;
@@ -29,7 +29,7 @@
   font-family: var(--additional-font-family);
   font-size: 14px;
   text-transform: inherit;
-  transition: box-shadow .3s ease;
+  transition: box-shadow 0.3s ease;
   cursor: pointer;
   appearance: none;
 }
@@ -50,7 +50,7 @@
   block-size: 100%;
   inset: 0;
   background: var(--accent-color);
-  transition: transform .5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   transform: scaleX(0);
   transform-origin: left;
 }
@@ -79,7 +79,7 @@
 
 .header__title {
   margin-block-start: 20px;
-  font-size: clamp(.875rem, .6769rem + .8451vw, 1.4375rem);
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
 }
 
 .header__theme-menu {
@@ -101,7 +101,7 @@
   font-size: 14px;
   text-transform: uppercase;
   background: transparent;
-  transition: opacity .3s ease;
+  transition: opacity 0.3s ease;
   cursor: pointer;
   appearance: none;
 }
@@ -109,7 +109,7 @@
 .theme-menu__button:not(:disabled)::after {
   display: block;
   content: "";
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
   transform: scaleX(0);
   transform-origin: left;
   block-size: 2px;
@@ -118,12 +118,12 @@
 }
 
 .theme-menu__button:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .theme-menu__button:focus {
   outline: none;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -133,11 +133,13 @@
 .theme-menu__button:disabled {
   cursor: default;
   pointer-events: none;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .theme-menu__button:disabled::before {
   position: absolute;
+  top: 0;
+  left: 0;
   content: "▶";
   inset-inline-start: -20px;
   animation: moving 0.5s ease-in-out infinite alternate;
@@ -163,14 +165,14 @@
 .card__label {
   position: absolute;
   z-index: 1;
-  inset-inline-end: 25px;
+  inset-inline-end: 11px;
   inset-block-start: 25px;
   color: var(--accent-color);
   text-shadow: 0 0 1px var(--main-color);
   font-family: var(--additional-font-family);
   font-size: 14px;
   text-transform: uppercase;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .card__image {
@@ -188,7 +190,7 @@
   border-block-start: 2px solid var(--accent-color);
   padding: 25px 30px 0 25px;
   font-size: 18px;
-  line-height: calc(21/18);
+  line-height: calc(21 / 18);
 }
 
 .card__interface {
@@ -204,7 +206,7 @@
   padding: 0;
   background: transparent;
   border: 2px solid transparent;
-  transition: border-color .3s ease;
+  transition: border-color 0.3s ease;
   cursor: pointer;
   appearance: none;
 }
@@ -268,7 +270,7 @@
 }
 
 .popup::backdrop {
-  opacity: .75;
+  opacity: 0.75;
   background: #000000;
 }
 
@@ -295,7 +297,7 @@
 }
 
 .filter-contrast {
-  filter: contrast(.8);
+  filter: contrast(0.8);
 }
 
 .filter-grayscale {
@@ -315,7 +317,7 @@
 }
 
 .filter-multiple {
-  filter: opacity(.9) blur(2px) contrast(3) sepia(.2);
+  filter: opacity(0.9) blur(2px) contrast(3) sepia(0.2);
 }
 
 /* Вспомогательные стили */
