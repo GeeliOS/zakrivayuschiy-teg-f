@@ -1,6 +1,37 @@
-/* В этом файле вы опишете значения переменных в разных цветовых схемах.
-Придерживайтесь такого именования классов:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
-*/
+:root.theme-light {
+    --main-color: var(--white);
+    --accent-color: #000000;
+    --bold-font-weight: 700;
+    --normal-font-weight: 400;
+    --button-color: var(--white);
+    --backgriund-gradient:
+            repeating-linear-gradient(to left, #D3D3D3 0 2px, #D3D3D300 2px 4px),
+            repeating-linear-gradient(to bottom, #D3D3D3 0 2px, #D3D3D300 2px 4px),
+            linear-gradient(to bottom, #E7E7E7 .01%, #1A1A1A);
+}
+
+:root.theme-dark {
+    --main-color:#000000;
+    --accent-color: var(--grean);
+    --bold-font-weight: 785;
+    --normal-font-weight: 465;
+    --button-color: var(--grean);
+    --backgriund-gradient:
+            repeating-linear-gradient(to left, #000000 0 2px, #00000000 2px 4px),
+            repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px),
+            linear-gradient(to bottom, #007F0C, #004306);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-color:#000000;
+        --accent-color: var(--grean);
+        --bold-font-weight: 785;
+        --normal-font-weight: 465;
+        --button-color: var(--grean);
+        --backgriund-gradient:
+                repeating-linear-gradient(to left, #000000 0 2px, #00000000 2px 4px),
+                repeating-linear-gradient(to bottom, #000000 0 2px, #00000000 2px 4px),
+                linear-gradient(to bottom, #007F0C, #004306);
+    }
+}
